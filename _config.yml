@@ -1,18 +1,12 @@
-title: Moonwalk
-author: Abhinav Saxena
-url: https://www.abhinavsaxena.com # root address of the site
-baseurl: "/moonwalk/" # set to "/moonwalk" if hosting under a project subpath
+title: justin sautter
+author: Justin Sautter
+email: me@justinsautter.zip
+url: "https://justinsautter.zip" # root address of the site
+baseurl: "" # served from the domain root on Vercel
 description: > # description of the site (multiple lines allowed)
-  Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
+  Where dumpsters are set ablaze.
 
-permalink: /:slug
-
-twitter:
-  username: abhinav # update or delete this
-  card: summary_large_image
-
-#theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
-remote_theme: abhinavs/moonwalk
+permalink: /blog/:slug/
 
 theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
@@ -25,7 +19,7 @@ theme_config:
   # following keys are using to create home layout
   show_projects: true # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
-  show_old_projects: true # show old projects as cards, add in _data/home.yml
+  show_old_projects: false # show old projects as cards, add in _data/home.yml
   show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: true # show tags in a blog posts
@@ -38,18 +32,28 @@ theme_config:
   show_link_previews: true # show preview cards when hovering internal post links
   # options for "home" page
   home:
-    title_projects: Portfolio
+    title_projects: Projects
     title_misc_list: Details
-    title_blog: Blog
+    title_blog: Recent posts
     title_old_projects: Old Projects
-
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 highlighter: rouge
 
 sass:
   style: :compressed
+
+exclude:
+  - README.md
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - LICENSE.txt
+  - Makefile
+  - moonwalk.gemspec
+  - moonwalk_on_windows.md
+  - github_pages.md
+  - _screenshots
+  - bin
+  - vercel.json
 
 plugins:
   - jekyll-feed
