@@ -15,4 +15,4 @@ life changelog v26.11.21
 
 - Working on cars. 🔧 🚗
 
-- 
+- Exploring Orthodox Christianity. ☦️ 📿
